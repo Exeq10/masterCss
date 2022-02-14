@@ -1,0 +1,262 @@
+    @font-face {
+        font-family: "nevis";
+        src: url(/fonts/nevis.ttf);
+        src: url(/fonts/nevis.eot) url(/fonts/nevis.woff) url(/fonts/nevis.svg);
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: "fajala";
+        src: url(/fonts/FjallaOne-Regular.ttf);
+    }
+    
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .body {
+        background-image: url(../img/paven.png);
+    }
+    /* Estilos generales */
+    
+    img {
+        display: block;
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0
+    }
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .logo {
+        width: 15rem;
+    }
+    
+    .texto__logo h1 {
+        color: #71B053;
+        text-transform: uppercase;
+        font-size: 4rem;
+        text-shadow: 3px 0px 6px #333333;
+        font-family: "nevis";
+        transition: all 300ms;
+    }
+    
+    .texto__logo h1:hover {
+        text-shadow: 5px 0px 6px #47a70f;
+    }
+    
+    .navegacion {
+        width: 100%;
+        background-color: #333333;
+    }
+    
+    .navegacion ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .navegacion ul li {
+        display: block;
+        color: white;
+        padding: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+        font-weight: bold;
+        transition: all 1s;
+    }
+    
+    .navegacion ul li:hover {
+        background-color: #71B053;
+    }
+    
+    .contenedor {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .grid-secciones {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: "aside cuadros";
+        margin: 0 auto;
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+    
+    .aside {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        grid-area: aside;
+        box-shadow: 0px 2px 2px #ccc;
+        background-color: white;
+        max-height: 88rem;
+    }
+    
+    .bloque {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        border-bottom: 1px dashed #333333;
+    }
+    
+    .bloque a {
+        font-size: 1.4rem;
+        color: #47a70f;
+    }
+    
+    .bloque h3 {
+        background-color: rgb(250, 245, 245);
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: .5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .al {
+        color: black;
+    }
+    
+    .a-1 {
+        color: red;
+    }
+    
+    .a-2 {
+        color: blue;
+    }
+    
+    .enl-int {
+        color: black;
+    }
+    
+    label {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    input {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        border: 1px solid gray;
+        font-size: 1.2rem;
+        padding: 0.2rem;
+    }
+    
+    .boton {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        background-color: #71B053;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 1.5rem;
+        max-width: 50%;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: all 300ms;
+        margin-bottom: 1rem;
+    }
+    
+    .boton:hover {
+        background-color: #4f8137;
+    }
+    
+    .cuadros {
+        display: flex;
+        flex-direction: column;
+        grid-area: cuadros;
+        padding: 1.5rem;
+    }
+    
+    .cuadro {
+        border: 1px solid #ccc;
+        background-color: white;
+        text-align: start;
+        padding: 1.5rem;
+        margin-bottom: 5rem;
+        box-shadow: 0px 2px 2px #ccc;
+    }
+    
+    h2 {
+        text-align: center;
+        border-bottom: 1px solid gray;
+        font-size: 2.5rem;
+        font-family: "fajala";
+        color: rgb(75, 72, 72);
+    }
+    
+    .cuadro p {
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .cuadro p::before {
+        content: url(/img/paven.png);
+    }
+    
+    span {
+        color: #71B053;
+    }
+    
+    .back {
+        color: rgb(209, 50, 50);
+    }
+    
+    .ins {
+        color: sandybrown;
+    }
+    
+    .historial {
+        width: 100%;
+        text-align: end;
+    }
+    
+    .historial h3 a {
+        font-size: 1.5rem;
+        color: #47a70f;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .footer {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #333333;
+        padding: .5rem;
+    }
